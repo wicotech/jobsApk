@@ -19,7 +19,9 @@ class Categorietile extends StatelessWidget {
       ),
 
       child: ListTile(
-        leading: Image.asset(path),
+        leading: Container(
+          padding: EdgeInsets.symmetric(vertical: 5),
+            child: Image.asset(path)),
         title: Text(nom,style: TextStyle(
             fontSize:15
         ),)

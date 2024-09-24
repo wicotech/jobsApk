@@ -4,6 +4,7 @@ import 'package:jobs/composants/appBarTitle.dart';
 import 'package:jobs/composants/notificationItem.dart';
 
 import '../composants/contenuDrawer.dart';
+import '../composants/espaces.dart';
 import '../composants/profil.dart';
 
 
@@ -42,9 +43,29 @@ class _NotificationsState extends State<Notifications> {
         padding: EdgeInsets.fromLTRB(20, 20, 20, 0),
         child: ListView(
           children: [
+            Row(
+              children: [
+                Text("24/09/2024"),
+                EspacesH(largeur: 8),
+                Expanded(child: Divider()),
+              ],
+            ),
             Notificationitem(icone: Icons.message, texte: "Nouveau gombeau g"
                 "ombeaugombeaugombeau gombeau"
                 "ombeaugombeaugombeau gombeau"),
+            Notificationitem(icone: Icons.message, texte: "Nouveau gombeau g"
+                "ombeaugombeaugombeau gombeau"
+                "ombeaugombeaugombeau gombeau"),
+            Notificationitem(icone: Icons.message, texte: "Nouveau gombeau g"
+                "ombeaugombeaugombeau gombeau"
+                "ombeaugombeaugombeau gombeau"),
+            Row(
+              children: [
+                Text("24/09/2024"),
+                EspacesH(largeur: 8),
+                Expanded(child: Divider()),
+              ],
+            ),
             Notificationitem(icone: Icons.message, texte: "Nouveau gombeau g"
                 "ombeaugombeaugombeau gombeau"
                 "ombeaugombeaugombeau gombeau"),

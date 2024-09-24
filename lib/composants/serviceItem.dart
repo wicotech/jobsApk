@@ -43,7 +43,7 @@ class Serviceitem extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Profil(rayon: 40, bordure: Colors.green,),
+                  Profil(rayon: 40, bordure: primary,),
                   Text("Nom du prestataire",
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
@@ -65,12 +65,12 @@ class Serviceitem extends StatelessWidget {
                     width: 90,
                     child: Row(
                       children: [
-                        Icon(Icons.not_listed_location, color: Colors.green,size: 15,),
+                        Icon(Icons.not_listed_location, color: Colors.grey,size: 15,),
                         Container(
                           width: 70,
                           child: Text("YopougonMMMM", maxLines: 1,overflow: TextOverflow.ellipsis,style: TextStyle(
                             fontSize: 13,
-                            color: Colors.green
+                            color: Colors.grey
                           ),),
                         )
                       ],
@@ -81,7 +81,10 @@ class Serviceitem extends StatelessWidget {
               ),
             ),
 
-            EspacesH(largeur: 20),
+            VerticalDivider(
+
+            ),
+            EspacesH(largeur: 10),
             Container(
               width: 220,
               height: 120,

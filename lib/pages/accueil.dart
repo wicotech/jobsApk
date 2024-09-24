@@ -60,13 +60,30 @@ class _AccueilState extends State<Accueil> {
                         borderRadius: BorderRadius.only(bottomLeft: Radius.circular(20), bottomRight: Radius.circular(20)),
                         color: primary,
                       ),
-                      child: TextField(
-                            decoration: InputDecoration(
-                                prefixIcon: const Icon(Icons.search),
-                                hintText: "Rechercher un service",
-                                border: OutlineInputBorder(
-                                    borderRadius: BorderRadius.circular(12))),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Container(
+                            width: 290,
+                            child: TextField(
+                              decoration: InputDecoration(
+                                  prefixIcon: const Icon(Icons.search),
+                                  hintText: "Rechercher un service",
+                                  border: OutlineInputBorder(
+                                      borderRadius: BorderRadius.circular(12))),
+                            ),
                           ),
+                          Container(
+                            width: 50,
+                            height: 50,
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(15)
+                            ),
+                            child: Icon(Icons.filter_list_outlined, color: primary,),
+                          )
+                        ],
+                      ),
 
                     ),
 

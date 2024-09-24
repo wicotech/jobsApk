@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:jobs/colors.dart';
 import 'package:jobs/composants/parametresItem.dart';
+import 'package:jobs/composants/profil.dart';
 
 import '../pages/connexion.dart';
 import '../pages/inscription.dart';
@@ -15,9 +17,30 @@ class Contenudrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.only(top: 50),
+      //padding: EdgeInsets.only(top: 50),
       child: Column(
         children: [
+          Stack(
+            children: [
+              Container(
+                width: double.infinity,
+                height: 150,
+                color: primary[200],
+              ),
+              Positioned(
+                top: 40,
+                left: 12,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Profil(rayon: 60, bordure: Colors.white),
+                    Text("Nom prénom", style: TextStyle(color: Colors.white),),
+                    Text("exemple@gmail.com"),
+                  ],
+                ),
+              )
+            ],
+          ),
           Text("Menu", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
           EspacesV(hauteur: 20),
 
