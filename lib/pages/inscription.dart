@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:jobs/colors.dart';
 import 'package:jobs/composants/bouton_arrondi.dart';
 import 'package:jobs/composants/espaces.dart';
-
 import '../composants/socialMedias.dart';
 
 class Inscription extends StatefulWidget {
@@ -56,7 +56,7 @@ class _InscriptionState extends State<Inscription> {
                   width: double.infinity,
         
                   decoration: const BoxDecoration(
-                    color: Colors.green,
+                    color: primary,
                       borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(50),
                           topRight: Radius.circular(50))),
@@ -74,7 +74,7 @@ class _InscriptionState extends State<Inscription> {
                                 color: Colors.white,
                               ),
                               border: OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(20))),
+                                  borderRadius: BorderRadius.circular(12))),
                         ),
         
                         const EspacesV(hauteur: 15),
@@ -90,7 +90,7 @@ class _InscriptionState extends State<Inscription> {
                               ),
         
                               border: OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(20))),
+                                  borderRadius: BorderRadius.circular(12))),
                         ),
                         const EspacesV(hauteur: 15),
         
@@ -104,9 +104,9 @@ class _InscriptionState extends State<Inscription> {
                                 Icons.lock,
                                 color: Colors.white,
                               ),
-                              suffixIcon: Icon(Icons.remove_red_eye, color: Colors.black,),
+                              suffixIcon: Icon(Icons.remove_red_eye, color: Colors.white,),
                               border: OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(20))),
+                                  borderRadius: BorderRadius.circular(12))),
                         ),
                         const EspacesV(hauteur: 15),
                         TextFormField(
@@ -121,11 +121,11 @@ class _InscriptionState extends State<Inscription> {
                               ),
         
                               border: OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(20))),
+                                  borderRadius: BorderRadius.circular(12))),
                         ),
                         const EspacesV(hauteur: 20),
         
-                        BoutonArrondi(onTap: () {}, texte: "S'inscrire", couleur: Colors.white, couleurTexte: Colors.black,),
+                        BoutonArrondi(onTap: () {}, texte: "S'inscrire", couleur: primaryAccent[700], couleurTexte: Colors.black,),
         
                         const EspacesV(hauteur: 15),
         
@@ -159,7 +159,7 @@ class _InscriptionState extends State<Inscription> {
                               Socialmedias(path:"assets/images/apple.png"),
                             ]),
                         const EspacesV(hauteur: 20),
-                        const Row(
+                        Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text(
@@ -173,7 +173,7 @@ class _InscriptionState extends State<Inscription> {
                             Text(
                               "Connectez-vous?",
                               style: TextStyle(
-                                  fontWeight: FontWeight.bold, color: Colors.red),
+                                  fontWeight: FontWeight.bold, color: primaryAccent[700]),
                             )
                           ],
                         )

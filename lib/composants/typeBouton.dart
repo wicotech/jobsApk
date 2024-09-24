@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:jobs/colors.dart';
 
 
 
@@ -13,7 +14,7 @@ class Typebouton extends StatelessWidget {
       height: 65,
       width: double.infinity,
       decoration: BoxDecoration(
-        color: Colors.green,
+        color: primary,
         borderRadius: BorderRadius.circular(20)
       ),
       child: Row(
@@ -29,7 +30,7 @@ class Typebouton extends StatelessWidget {
             child: Container(
                 padding: EdgeInsets.all(5),
                 decoration: BoxDecoration(
-                    color: Colors.lightGreenAccent,
+                    color: primary[400],
                   borderRadius: BorderRadius.circular(15)
                 ),
                 child: Icon(Icons.remove_red_eye, color: Colors.white, size: 32,)),

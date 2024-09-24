@@ -7,7 +7,8 @@ class Appbartitle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Text(titre, style: TextStyle(
-        fontWeight: FontWeight.bold
+        fontWeight: FontWeight.bold,
+      color: Colors.white
     ),);
   }
 }

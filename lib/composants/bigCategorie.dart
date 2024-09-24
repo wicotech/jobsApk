@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:jobs/colors.dart';
 
 import 'espaces.dart';
 
@@ -12,15 +13,16 @@ class Bigcategorie extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final double radius = 15;
+    final double radius = 10;
     return SizedBox(
       height: 60,
       width: 230,
       child: Container(
+
         margin: EdgeInsets.symmetric(horizontal: 10),
         padding: EdgeInsets.all(10),
         decoration:  BoxDecoration(
-            color: Colors.white,
+            color: primary[50],
             borderRadius: BorderRadius.only(
                 topLeft: Radius.circular(radius),
                 bottomLeft: Radius.circular(radius),
@@ -34,7 +36,7 @@ class Bigcategorie extends StatelessWidget {
                 child: Image.asset(path)
             ),
             EspacesH(largeur: 20),
-            
+
             Container(
               width: 100,
               //color: Colors.red,

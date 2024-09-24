@@ -24,7 +24,7 @@ class BoutonArrondi extends StatelessWidget {
             ),
           ],
             color: couleur,
-            borderRadius: BorderRadius.circular(25)),
+            borderRadius: BorderRadius.circular(15)),
         child: Center(
             child: Text(
           texte,

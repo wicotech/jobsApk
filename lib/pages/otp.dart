@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_otp_text_field/flutter_otp_text_field.dart';
+import 'package:jobs/colors.dart';
 import 'package:jobs/composants/bouton_arrondi.dart';
 import 'package:jobs/composants/espaces.dart';
 
@@ -31,11 +32,11 @@ class _OtpState extends State<Otp> {
 
             OtpTextField(
               numberOfFields: 4,
-              fieldHeight: 60,
-              fieldWidth: 50,
-              focusedBorderColor: Colors.green,
+              fieldHeight: 90,
+              fieldWidth: 60,
+              focusedBorderColor: primary,
               filled: true,
-              borderColor: Colors.green,
+              borderColor: primary,
               showFieldAsBox: true,
               onCodeChanged: (String code) {
               },
@@ -46,7 +47,7 @@ class _OtpState extends State<Otp> {
 
             EspacesV(hauteur: 30),
 
-            BoutonArrondi(onTap: (){}, texte: "Envoyer", couleur: Colors.green, couleurTexte: Colors.white,)
+            BoutonArrondi(onTap: (){}, texte: "Envoyer", couleur: primary, couleurTexte: Colors.white,)
           ],
         ),
 

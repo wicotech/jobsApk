@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:jobs/colors.dart';
 import 'package:jobs/composants/espaces.dart';
 
 class Categorie extends StatelessWidget {
@@ -10,14 +11,14 @@ class Categorie extends StatelessWidget {
   final String nom;
   @override
   Widget build(BuildContext context) {
-    final double radius = 15;
+    final double radius = 10;
     return SizedBox(
       height: 40,
       child: Container(
         margin: EdgeInsets.symmetric(horizontal: 10),
         padding: EdgeInsets.all(10),
           decoration:  BoxDecoration(
-              color: Colors.white,
+              color: primary[50],
               borderRadius: BorderRadius.circular(radius)),
         child: Row(
           children: [
@@ -28,6 +29,7 @@ class Categorie extends StatelessWidget {
             EspacesH(largeur: 8),
 
             Text(nom, style: TextStyle(
+              //color: Colors.white,
               fontSize: 15,
               fontWeight: FontWeight.w500
             ),)

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:jobs/colors.dart';
 import 'package:jobs/pages/manager.dart';
 import 'package:jobs/themes/themeUn.dart';
 
@@ -14,7 +15,29 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: lightMode,
+      theme: ThemeData(
+        primarySwatch: primary,
+        scaffoldBackgroundColor: Colors.white,
+        appBarTheme: AppBarTheme(
+          backgroundColor: primary,
+          iconTheme: IconThemeData(
+            color: Colors.white
+          ),
+          actionsIconTheme: IconThemeData(
+            color: Colors.white
+          ),
+        ),
+        drawerTheme: DrawerThemeData(
+          backgroundColor: Colors.white
+        ),
+        inputDecorationTheme: InputDecorationTheme(
+          prefixIconColor: Colors.white,
+          hintStyle: TextStyle(
+            color: Colors.white
+          ),
+
+        )
+      ),
       home: const Manager(),
     );
   }

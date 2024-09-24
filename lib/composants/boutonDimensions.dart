@@ -20,7 +20,7 @@ class Boutondimensions extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        padding: EdgeInsets.all(2.5),
+        padding: EdgeInsets.all(2),
         height: hauteur,
         width: largeur,
         decoration: BoxDecoration(
@@ -30,7 +30,7 @@ class Boutondimensions extends StatelessWidget {
             child: Text(
               texte,
               style: const TextStyle(
-                fontSize: 16,
+                fontSize: 10,
                 color: Colors.white
 
               ),
